@@ -1,0 +1,7 @@
+<h1>
+  <% if @your_name.present? || @your_adjective.present? %>
+    <%= "#{@your_name} is so #{@your_adjective}!" %>
+  <% else %>
+    <%= @text %>
+  <% end %>
+</h1>
