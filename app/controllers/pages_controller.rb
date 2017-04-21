@@ -14,11 +14,16 @@ class PagesController < ApplicationController
   end
 
   def person
+    @person = Person.new(person_params[:age], person_params[:name])
   end
 
   private
 
   def stringify_params
     params.permit(:name, :adjective)
+  end
+
+  def person_params
+    params.permit(:name, :age)
   end
 end
