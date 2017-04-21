@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   put 'age', to: 'pages#person'
   post 'stringify', to: 'pages#stringify'
-
+  get 'me', to: 'pages#me'
 end

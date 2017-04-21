@@ -10,11 +10,11 @@ class PagesController < ApplicationController
     @your_adjective = stringify_params[:adjective]
   end
 
-  def age
-  end
-
   def person
     @person = Person.new(person_params[:age], person_params[:name])
+  end
+
+  def me
   end
 
   private
